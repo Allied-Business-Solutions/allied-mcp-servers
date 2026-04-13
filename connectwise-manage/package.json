@@ -1,0 +1,23 @@
+{
+  "name": "connectwise-manage-mcp",
+  "version": "2.0.0",
+  "description": "Full-coverage MCP Server for ConnectWise Manage (v2025.16 API)",
+  "main": "dist/index.js",
+  "bin": { "connectwise-mcp": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}
